@@ -1,6 +1,6 @@
 FROM node:alpine as webpackNode
 
-RUN apk update && apk upgrade && apk add --no-cache bash install -y nginx
+RUN apk update && apk upgrade && apk add --no-cache bash nginx
 
 WORKDIR /src
 
