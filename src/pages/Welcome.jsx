@@ -9,7 +9,8 @@ export default () => (
     <a href="https://pro.ant.design/docs/block-cn" target="_blank" rel="noopener noreferrer">
       use block
     </a>
-    <div>{process.env.NODE_ENV}</div>
+    <div>NODE_ENV {process.env.NODE_ENV}</div>
+    <div>APIENV {process.env.APIENV}</div>
     。
   </p>
 );

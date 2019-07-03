@@ -2,18 +2,19 @@ version: '2'
 
 services:
   dev:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: ui-dev
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile
+    image: weschen/umitest:20190703.3
     container_name: webpack-container
     environment:
       - NODE_ENV=development
+      - API=http://bing.com
     ports:
       - "8080:8000"      
-    volumes:
-      - .:/src
-      - /src/node_modules
+    # volumes:
+    #   - .:/src
+    #   - /src/node_modules
 
   test:
     build:
@@ -29,14 +30,15 @@ services:
     command: npm analyze
 
   prod:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: guest-ui-prod
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile
+    image: weschen/umitest:20190703.3
     container_name: prod-container
     environment:
       - NODE_ENV=production
+      - API=http://baidu.com
     ports:
       - "8000:8000"
-    volumes:
-      - /src/node_modules
+    # volumes:
+    #   - /src/node_modules
