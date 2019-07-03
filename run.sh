@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 # set -e
 # set -x
-export APIENV="${APIENV:google.com}"
 export NODE_ENV="${NODE_ENV:development}"
 echo "Docker Start To Build ======================================================start"
 echo "$NODE_ENV"
