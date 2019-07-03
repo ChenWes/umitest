@@ -5,7 +5,7 @@ services:
     # build:
     #   context: .
     #   dockerfile: Dockerfile
-    image: weschen/umitest:20190703.5
+    image: weschen/umitest:20190703.7
     container_name: webpack-container
     environment:
       - NODE_ENV=development
@@ -33,7 +33,7 @@ services:
     # build:
     #   context: .
     #   dockerfile: Dockerfile
-    image: weschen/umitest:20190703.5
+    image: weschen/umitest:20190703.7
     container_name: prod-container
     environment:
       - NODE_ENV=production

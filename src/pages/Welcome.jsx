@@ -1,4 +1,8 @@
 import React from 'react';
+
+console.log(`获取环境参数:${process.env.NODE_ENV}`);
+console.log(`获取API参数:${process.env.APIENV}`);
+
 export default () => (
   <p
     style={{
