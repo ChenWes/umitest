@@ -1,4 +1,4 @@
-FROM node:alpine as webpackNode
+FROM node:10.16
 
 RUN apk update && apk upgrade && apk add --no-cache bash nginx
 
